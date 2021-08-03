@@ -18,10 +18,40 @@ const questions = [
     },
     {
         type: "input",
-        name: 'installation',
-        message: "How will you decide to install your project?"
-    }
-    // a question for asking which license
+        name: 'Table of contents',
+        message: "How will you run down the list of contents for this project?"
+    },
+    {
+        type: "input",
+        name: 'Installation',
+        message: "How will you install your project?"
+    },
+    {
+        type: "input",
+        name: 'Usage',
+        message: "How will you use this project?"
+    },
+    {
+        type: "input",
+        name: 'License',
+        message: "Which license will you use for this project?"
+    },
+    {
+        type: "input",
+        name: 'Contributing',
+        message: "What will you contribute to this project?"
+    },
+    {
+        type: "input",
+        name: 'Tests',
+        message: "How will you test this project?"
+    },
+    {
+        type: "input",
+        name: 'Questions',
+        message: "List some questions for this project?"
+    },
+    
 
 ];
 
