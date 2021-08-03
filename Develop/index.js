@@ -15,11 +15,20 @@ const questions = [
         type: "input",
         name: 'description',
         message: "What is the description of your project?"
+    },
+    {
+        type: "input",
+        name: 'installation',
+        message: "How will you decide to install your project?"
     }
+    // a question for asking which license
+
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    fs.writeFileSync(fileName, data);
+ }
 
 // TODO: Create a function to initialize app
 function init() {
@@ -40,11 +49,8 @@ function init() {
 
             console.log(desiredOutput)
 
-            fs.writeFileSync("./output/README.md", desiredOutput);
-
-
-
-
+            writeToFile("./output/README.md", desiredOutput);
+            
         })
         .catch((error) => {
             if (error.isTtyError) {
