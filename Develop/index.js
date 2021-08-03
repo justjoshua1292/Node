@@ -1,17 +1,20 @@
 // TODO: Include packages needed for this application
 var inquirer = require('inquirer');
+var fs = require('fs')
+
+var generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: "input",
-        name: 'username',
-        message: "What is your name?"
+        name: 'title',
+        message: "What is the title of your project?"
     },
     {
         type: "input",
-        name: 'favoriteSong',
-        message: "What is your favorite song?"
+        name: 'description',
+        message: "What is the description of your project?"
     }
 ];
 
@@ -25,8 +28,23 @@ function init() {
         .prompt(questions)
         .then((answers) => {
             // Use user feedback for... whatever!!
-            console.log(answers.username)
-            console.log(answers.favoriteSong)
+            console.log(answers.title)
+            console.log(answers.description)
+
+            // song#whatever the number
+            // const desiredOutput = "song#" + number // ----> song#5
+
+            // const desiredOutput = `song#${number}` // ---> song#5
+
+            const desiredOutput = generateMarkdown(answers)
+
+            console.log(desiredOutput)
+
+            fs.writeFileSync("./output/README.md", desiredOutput);
+
+
+
+
         })
         .catch((error) => {
             if (error.isTtyError) {
