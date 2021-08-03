@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 var inquirer = require('inquirer');
 var fs = require('fs')
-
 var generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
@@ -9,12 +8,12 @@ const questions = [
     {
         type: "input",
         name: 'title',
-        message: "What is the title of your project?"
+        message: "Give me the title of your project?"
     },
     {
         type: "input",
         name: 'description',
-        message: "What is the description of your project?"
+        message: "Tell me about the description of your project?"
     },
     {
         type: "input",
@@ -24,7 +23,7 @@ const questions = [
     {
         type: "input",
         name: 'Installation',
-        message: "How will you install your project?"
+        message: "How will you install your project & what will you use to install this project?"
     },
     {
         type: "input",
@@ -34,12 +33,12 @@ const questions = [
     {
         type: "input",
         name: 'License',
-        message: "Which license will you use for this project?"
+        message: "Which license/licenses will you use for this project?"
     },
     {
         type: "input",
         name: 'Contributing',
-        message: "What will you contribute to this project?"
+        message: "What will you contribute to this project & will there be anyone else working with you?"
     },
     {
         type: "input",
@@ -49,9 +48,18 @@ const questions = [
     {
         type: "input",
         name: 'Questions',
-        message: "List some questions for this project?"
+        message: "If you have any questions about this project, let me know, here's my contact info."
     },
-    
+    {
+        type: "input",
+        name: 'Github',
+        message: "Do you have a Github account & if so, enter it here."
+    },
+    {
+        type: "input",
+        name: 'Email',
+        message: "Write down your email & enter it here."
+    },
 
 ];
 
@@ -76,6 +84,8 @@ function init() {
             console.log(answers.contributing)
             console.log(answers.tests)
             console.log(answers.questions)
+            console.log(answers.github)
+            console.log(answers.email)
 
             // song#whatever the number
             // const desiredOutput = "song#" + number // ----> song#5
