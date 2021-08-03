@@ -69,6 +69,13 @@ function init() {
             // Use user feedback for... whatever!!
             console.log(answers.title)
             console.log(answers.description)
+            console.log(answers.tableofcontents)
+            console.log(answers.installation)
+            console.log(answers.usage)
+            console.log(answers.license)
+            console.log(answers.contributing)
+            console.log(answers.tests)
+            console.log(answers.questions)
 
             // song#whatever the number
             // const desiredOutput = "song#" + number // ----> song#5
