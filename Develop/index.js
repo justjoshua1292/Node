@@ -7,12 +7,12 @@ var generateMarkdown = require('./utils/generateMarkdown.js')
 const questions = [
     {
         type: "input",
-        name: 'title',
+        name: 'Title',
         message: "Give me the title of your project?"
     },
     {
         type: "input",
-        name: 'description',
+        name: 'Description',
         message: "Tell me about the description of your project?"
     },
     {
