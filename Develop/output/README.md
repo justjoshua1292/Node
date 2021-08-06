@@ -12,7 +12,7 @@ v
 * [Contributing] (#Contributing)
 * [Tests] (#Tests)
 * [Questions] (#Questions)
-            
+
 ## Installation
 v
 
@@ -35,4 +35,8 @@ v
 v
 
 ## Email
+<<<<<<< HEAD
 v
+=======
+Y
+>>>>>>> e3e44ba8da6c746a993292066bb3c3f18e49605a
