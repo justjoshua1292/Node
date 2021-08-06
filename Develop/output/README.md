@@ -1,10 +1,11 @@
-# v
-  
+# ReadMe Generator💻
 
-## Description
-v
 
-## Table of Contents
+
+## Description📑
+This project will be a brief introduction on how to create a simple readme for your project via github. I willwalk through my table of contents, why i'm doing this, installation purposes, what this will be used for in the present and future, some of the licenses I used, how to test this readme with npm i and npm test, posing questions if you have any for me, my github and my email, and etc.
+
+## Table of Contents👨‍💻
 * [Description] (#Description)
 * [Installation] (#Installation)
 * [Usage] (#Usage)
@@ -12,31 +13,27 @@ v
 * [Contributing] (#Contributing)
 * [Tests] (#Tests)
 * [Questions] (#Questions)
+            
+## Installation🧬
+etc
 
-## Installation
-v
+## Usage🖊
+For practice
 
-## Usage
-v
+## License©
+MIT, creative commons and other various licenses for starters, about 4 or 5, just to demonstrate.
 
-## License
-v
+## Contributing🤞
+Just me, i'll be walking everyone through it in a video as well.
 
-## Contributing
-v
+## Tests📑🖊
+through the terminal.
 
-## Tests
-v
+## Questions ❔
+2672078883
 
-## Questions
-v
+## Github 🚹
+https://github.com/justjoshua1292
 
-## Github
-v
-
-## Email
-<<<<<<< HEAD
-v
-=======
-Y
->>>>>>> e3e44ba8da6c746a993292066bb3c3f18e49605a
+## Email 📚
+justjoshua1292@gmail.com
