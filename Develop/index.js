@@ -18,7 +18,7 @@ const questions = [
     {
         type: "input",
         name: 'Table of contents',
-        message: "How will you run down the list of contents for this project?"
+        message: "What can be found in this README generator?"
     },
     {
         type: "input",
@@ -48,7 +48,7 @@ const questions = [
     {
         type: "input",
         name: 'Questions',
-        message: "If you have any questions about this project, let me know, here's my contact info."
+        message: "Here's my contact info for any questions or concerns you may have:"
     },
     {
         type: "input",
