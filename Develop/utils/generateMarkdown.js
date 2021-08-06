@@ -3,15 +3,15 @@
 
 function renderLicenseBadge(license , licenseLists) {
   if (license == licenseLists[0]){
-    var myBadge = "";
+    var myBadge = "[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)";
   }else if (license == licenseLists[1]){
-    var myBadge = "";
+    var myBadge = "[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)";
   }else if (license == licenseLists[2]){
     var myBadge = "";
   }else if (license == licenseLists[3]){
     var myBadge = "";
   }else if (license == licenseLists[4]){
-    var myBadge = "";
+    var myBadge = "[![Stargazers over time](https://starchart.cc/Naereen/badges.svg)](https://starchart.cc/Naereen/badges)";
   }
 
   return "![myBadge]"(" + myBadge + ")}
@@ -20,13 +20,13 @@ function renderLicenseBadge(license , licenseLists) {
 // If there is no license, return an empty string
 function renderLicenseLink(license, licenseLists) {
   if (license == licenseLists[0]){
-    var myLicense = "" ;
+    var myLicense = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" ;
   }else if (license == licenseLists[1]){
-    var myLicense = "" ;
+    var myLicense = "[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)" ;
   }else if (license == licenseLists[2]){
-      var myLicense = "" ;
+      var myLicense = "[![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)" ;
   }else if (license == licenseLists[3]){
-        var myLicense = "" ;
+        var myLicense = "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)" ;
   }else{
     var myLicense = "";
   }
@@ -37,13 +37,23 @@ function renderLicenseLink(license, licenseLists) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 
-function renderLicenseSection(license) {}
+function renderLicenseSection(license, licenseLists) {
+  if (license == "Nothing") {
+  return "";
+  }
+  var myBadge = renderLicenseBadge(license, licenseLists);
+  var myLink = renderLicenseLink(license, licenseLists);
+
+  return myBadge + " \r" + link + " ";
+}
+
 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
 return `# ${answers.Title}
-  
+
+
 
 ## Description
 ${answers.Description}
