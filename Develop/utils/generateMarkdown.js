@@ -67,28 +67,28 @@ ${answers.Description}
 * [Tests] (#Tests)
 * [Questions] (#Questions)
             
-## Installation 🧬
+## Installation 
 ${answers.Installation}
 
-## Usage 🖊
+## Usage 
 ${answers.Usage}
 
-## License©
+## License
 ${answers.License}
 
-## Contributing🤞
+## Contributing
 ${answers.Contributing}
 
-## Tests 📑🖊
+## Tests
 ${answers.Tests}
 
-## Questions ❔
+## Questions 
 ${answers.Questions}
 
-## Github 🚹
+## Github
 ${answers.Github}
 
-## Email 📚
+## Email
 ${answers.Email}`;
 };
 
