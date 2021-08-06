@@ -41,4 +41,4 @@ My personal email is harrisjosh885@gmail.com & justjoshua1292@gmail.com is my wo
 
 [Click Here For Video Tutorial](https://drive.google.com/file/d/18zRjl9sRREXPOsL6FiPLhaZ7pUz7BDXG/view)
 
-[Click Here For Video Tutorial-2](https://drive.google.com/file/d/1pzPoXJAcPR0LVrzUvIbWyCZdIwJAgtmW/view)
+[Another Video Tutorial](https://drive.google.com/file/d/1pzPoXJAcPR0LVrzUvIbWyCZdIwJAgtmW/view)
